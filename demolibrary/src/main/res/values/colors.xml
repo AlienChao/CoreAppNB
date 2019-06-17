@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 使用的是该App的颜色-->
+    <color name="colorPrimary">#6e5454</color>
+    <color name="colorPrimaryDark">#e77229</color>
+    <color name="colorAccent">#041a39</color>
+
+
+
+    //app title bar 背景颜色
+    <color name="app_bg_color">#ffffff</color>
+
+
+
+    <color name="white">#ffffff</color>
+    <color name="gray">#c7bdbd</color>
+
+
+    <color name="transparent">#00000000</color>
+
+    <!-- 按钮颜色-->
+    <color name="btColor">#0183FF</color>
+    <!-- 主题字体色-->
+    <color name="color_333333">#333333</color>
+
+    <color name="title_bar_color">#0183FF</color>
+
+
+    <color name="black">#000000</color>
+    <color name="actionsheet_blue">#037BFF</color>
+
+    <color name="table_background">#cbcbcb</color>
+    <color name="blue_main">#11a3fa</color>
+
+</resources>

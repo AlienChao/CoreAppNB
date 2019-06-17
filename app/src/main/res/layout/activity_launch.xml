@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_333333"
+   android:id="@+id/rl_content"
+    tools:context=".activity.LaunchActivity">
+
+    <yanzhikai.textpath.SyncTextPathView
+        android:id="@+id/atpv_as2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/atpv_as"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        app:duration="1500"
+        app:paintStrokeColor="@color/green"
+        app:paintStrokeWidth="1dp"
+        app:pathStrokeColor="@color/white"
+        app:showPainter="true"
+        app:text="广通"
+        app:textInCenter="true"
+        app:textSize="40sp" />
+
+    <yanzhikai.textpath.SyncTextPathView
+        android:id="@+id/atpv_as"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="244dp"
+        app:duration="1500"
+        app:paintStrokeColor="@color/green"
+        app:paintStrokeWidth="1dp"
+        app:pathStrokeColor="@color/white"
+        app:showPainter="true"
+        app:text="Super Library"
+        app:textInCenter="true"
+        app:textSize="40sp" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt1"
+        android:text="http"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/bt2"
+        android:text="上拉刷新下拉加载基类的使用"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:text="轮播图"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:text="指示器滑动"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/bt5"
+        android:text="权限管理"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+
+</LinearLayout>

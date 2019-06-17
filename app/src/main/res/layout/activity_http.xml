@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="不帶dialog請求" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="帶dialog請求" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="帶dialog 一次多个结果请求" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="下载" />
+
+    <Button
+        android:id="@+id/bt5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="上传" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/color_333333" />
+    </ScrollView>
+
+
+</LinearLayout>

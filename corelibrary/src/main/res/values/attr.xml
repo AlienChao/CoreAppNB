@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="CircleProgressBar">
+        <!--圆环相关-->
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundColor" format="color" />
+        <!--进度相关-->
+        <attr name="progressColor" format="color" />
+        <attr name="curProgress" format="integer" />
+        <attr name="maxProgress" format="integer" />
+        <!--百分比文本-->
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CountDown">
+        <attr name="isShowDrawable" format="boolean"/>
+        <attr name="totalTime" format="integer"/>
+        <attr name="hintStrColor" format="string"/>
+        <attr name="hintStr" format="string"/>
+
+        <attr name="sex" format="enum">
+            <enum name="man" value="0"/>
+            <enum name="woman" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

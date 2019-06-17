@@ -1,0 +1,78 @@
+<resources>
+
+    <style name="commen_wrap_lay">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+       <!-- //保留阴影 -->
+
+        <style name="dialog2" parent="@android:style/Theme.Dialog">
+            <item name="android:windowFrame">@null</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowBackground">@null</item>
+        </style>
+
+    <!-- dialog的动画 -->
+    <!-- dialog的动画 -->
+    <style name="main_menu_animstyle">
+        <!-- windowEnterAnimation 进入的动画 -->
+        <!--  代码里面 -->
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+
+
+
+    <!-- 3中状态view-->
+    <declare-styleable name="MultipleStatusView">
+        <attr name="loadingView" format="reference" />
+        <attr name="emptyView" format="reference" />
+        <attr name="contentView" format="reference" />
+    </declare-styleable>
+
+    <!--状态view的style-->
+    <style name="state_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">#a9b7b7</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- dialog-->
+    <style name="CustomProgressDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

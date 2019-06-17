@@ -1,0 +1,117 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'android-aspectjx'
+android {
+    compileSdkVersion 27
+
+
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+//        classpath 'org.aspectj:aspectjtools:1.8.9'
+//        // 如果是android library 要加上
+//        classpath 'org.aspectj:aspectjweaver:1.8.9'
+        classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.0'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:design:26.1.0'
+
+    //没有使用特殊Header，可以不加这行
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'
+    //rxjava retrofit
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.11'
+    compile 'com.squareup.retrofit2:retrofit:2.4.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.4.0'
+    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.3.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //权限
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+    //权限管理
+    //butterknife
+
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
+//    api 'com.jakewharton:butterknife:8.4.0'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
+
+//    apply plugin: 'com.jakewharton.butterknife'
+
+    //万能adapter
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+
+    //dialog等待框
+    compile 'com.wang.avi:library:2.1.3'
+
+
+    //65536 鬼逼问题
+    compile 'com.android.support:multidex:1.0.1'
+
+    //动画
+    compile 'com.wang.avi:library:2.1.3'
+    implementation 'org.jetbrains:annotations:15.0'
+
+    //轮播图
+    compile 'com.youth.banner:banner:1.4.10'  //最新版本
+
+    // 文档   https://github.com/Blankj/AndroidUtilCode/blob/master/utilcode/README-CN.md apk大小增加139KB
+    // 各种工具类  https://www.jianshu.com/p/72494773aace
+    compile 'com.blankj:utilcode:1.22.0'
+
+    //引入J神的rxrelay2，出现异常仍然可以处理
+    compile 'com.jakewharton.rxrelay2:rxrelay:2.0.0'
+
+
+    compile "com.github.wind0ws:rxbus2:1.1.1"
+
+    // MD 风格的对话框https://blog.csdn.net/x283930450/article/details/80525867
+    api ('com.afollestad.material-dialogs:commons:0.9.4.5'){
+        exclude group: 'com.android.support'
+    }
+    api ('com.afollestad.material-dialogs:core:0.9.4.5'){
+        exclude group: 'com.android.support'
+    }
+
+    implementation 'org.aspectj:aspectjrt:1.8.9'
+}
